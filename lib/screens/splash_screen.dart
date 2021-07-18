@@ -16,15 +16,17 @@ class _SplashScreenState extends State<SplashScreen> {
       Navigator.of(context).pushReplacement(
           MaterialPageRoute(builder: (context) => FirstPage()));
     });
-
   }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
         child: Container(
           decoration: BoxDecoration(
-            image: DecorationImage(image:AssetImage('assets/images/bg.png'),),
+            image: DecorationImage(
+              image: AssetImage('assets/images/bg.png'),
+            ),
           ),
           child: Center(
             child: Container(

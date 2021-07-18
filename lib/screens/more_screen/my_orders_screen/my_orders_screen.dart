@@ -5,9 +5,9 @@ import 'package:flutter_svg/svg.dart';
 import 'package:meal_monkey/constants.dart';
 import 'package:meal_monkey/reusable_widget.dart';
 import 'package:meal_monkey/screens/more_screen/my_orders_screen/reusable_widget.dart';
-import 'package:meal_monkey/screens/more_screen/payment_screen/reusable_widget.dart';
 
 class MyOrdersScreen extends StatelessWidget {
+
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -214,10 +214,11 @@ class MyOrdersScreen extends StatelessWidget {
                   Navigator.pushNamed(context, '/check_out');
                 },
               ),
-            )
+            ),
           ],
         ),
       ),
     );
   }
+
 }
